@@ -1,0 +1,29 @@
+body {
+    background-color: #222222;
+    color: #ffffff;
+}
+#container{
+    width: 980px;
+    margin: auto;
+}
+#content {
+    width: 95%;
+}
+#banner {
+    font-size: 18pt;
+    padding-left: 10px;
+}
+#info {
+    width: 95%;
+    background-color: #35D3DB;
+}
+.box {
+    width:200px;
+    height: 200px;
+    background-color: #888888;
+    margin: 6px;
+    float: left;
+}
+.box:hover {
+    background-color: #35D3DB;
+}
