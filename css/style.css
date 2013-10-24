@@ -1,29 +1,82 @@
+@font-face {
+  font-family: 'League Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../webfonts/LeagueGothic-Regular.otf);
+}
+
 body {
+    font-family: 'League Gothic', Impact, sans;
+    font-weight: normal;
     background-color: #222222;
     color: #ffffff;
 }
 #container{
-    width: 980px;
+    width: 918px;
     margin: auto;
 }
 #content {
-    width: 95%;
+    width: 99%;
 }
 #banner {
     font-size: 18pt;
     padding-left: 10px;
 }
 #info {
-    width: 95%;
+    display: block;
+    vertical-align: middle;
+    width: 96.5%;
+    height: 380px;
+    padding: 10px;
+    margin: 5px;
     background-color: #35D3DB;
+    overflow: hidden;
+}
+#info .title1{
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-name: slidein;
 }
 .box {
-    width:200px;
-    height: 200px;
-    background-color: #888888;
+    font-size: 22pt;
+    text-align: center;
+    width: 215px;
+    height: 215px;
     margin: 6px;
     float: left;
+    background-color: #aaa;
+}
+.centerit {
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
 }
 .box:hover {
     background-color: #35D3DB;
+}
+.title1 {
+    font-size: 68pt;
+    margin-top: 140px;
+}
+.title2 {
+    font-size: 35pt;
+}
+.subtitle {
+    font-size: 28pt;
+    color: #35D3DB;
 }
