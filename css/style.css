@@ -4,7 +4,9 @@
   font-weight: 400;
   src: url(../webfonts/LeagueGothic-Regular.otf);
 }
-
+.clear {
+    clear: both;
+}
 body {
     font-family: 'League Gothic', Impact, sans;
     font-weight: normal;
@@ -14,6 +16,7 @@ body {
 #container{
     width: 918px;
     margin: auto;
+    margin-top: 150px;
 }
 #content {
     width: 99%;
@@ -29,21 +32,68 @@ body {
     height: 380px;
     padding: 10px;
     margin: 5px;
-    background-color: #35D3DB;
+    background-color: #3BB4D5;
     overflow: hidden;
 }
 #info .title1{
-    -webkit-animation-duration: 1.5s;
+    display: none;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-name: slidein;
+}
+#info #github{
+    -webkit-animation-duration: 1.2s;
     -webkit-animation-name: slidein;
 }
 .box {
-    font-size: 22pt;
+    font-size: 16pt;
     text-align: center;
     width: 215px;
     height: 215px;
     margin: 6px;
     float: left;
-    background-color: #aaa;
+    background-color: #555;
+}
+.box:hover {
+    background-color: #0095BD;
+}
+#github {
+    position: relative;
+    width: 99%;
+    display: block;
+}
+#gitimg {
+    width: 50%;
+    float: left;
+}
+#gitimg img {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: -80px;
+    top: 60px;
+}
+#gittext {
+    margin-top: 140px;
+    width: 50%;
+    font-size: 22pt;
+    float: right;
+}
+#gittext .button {
+    color: #222;
+    background-color: #fff;
+    text-align: center; 
+    width: 125px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+}
+#gittext .button:hover {
+    background-color: #0095BD;
+    color: #fff;
+}
+#gittext .button a {
+    color: inherit;
+    text-decoration: none;
 }
 .centerit {
     /* Internet Explorer 10 */
@@ -66,9 +116,6 @@ body {
     box-pack:center;
     box-align:center;
 }
-.box:hover {
-    background-color: #35D3DB;
-}
 .title1 {
     font-size: 68pt;
     margin-top: 140px;
@@ -78,5 +125,5 @@ body {
 }
 .subtitle {
     font-size: 28pt;
-    color: #35D3DB;
+    color: #3BB4D5;
 }

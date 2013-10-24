@@ -6,4 +6,8 @@ function info()
         document.getElementById("info").style.display="none";
     }    
 }
-
+function github()
+{
+    document.getElementById("github").style.diplay="block";
+    document.getElementById("bannertitle").style.display="none";
+}
