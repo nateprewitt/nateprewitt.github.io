@@ -1,22 +1,26 @@
-function info()
-{
-    if (document.getElementById("info").style.display=="none") {
-        document.getElementById("info").style.display="block";
-    } else {
-        document.getElementById("info").style.display="none";
-    }    
-}
-function github()
-{
-    document.getElementById("github").style.diplay="block";
-    document.getElementById("bannertitle").style.display="none";
-}
-function infoslide()
-{ 
-    //document.getElementById("aboutcontainer").style.display="none";
-    //document.getElementById("resumecontainer").style.display="none";
-    //document.getElementById("gitcontainer").style.display="none";
-    //document.getElementById("bannertitle").style.display="block";
-    //document.getElementById("gitimg").style.display="none";
-    //document.getElementById("contactcontainer").style.display="none";
-}
+$(document).ready(function(){
+
+    (function setswitcher(){
+        var anchor = window.location.hash;
+        contentswitch(anchor);
+    })();
+    function contentswitch(id){    
+
+        //setTimeout($('.active').addClass('.out'), 1200);
+        $('.active').hide();
+        $('.active').removeClass('active');
+        if (id !== "") {
+            $(id+"container").addClass('active'); 
+            $(id+"container").show();
+        }
+        else {
+            $('#homecontainer').addClass('active');
+            $('#homecontainer').show();
+        }
+    }
+    $(document).on('click', '.box', function(){
+        $this = $(this);
+        var id = $this.attr('id');
+        contentswitch('#'+id); //appending # for future selector use
+    });
+});

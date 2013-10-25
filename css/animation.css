@@ -44,12 +44,12 @@
     }
 @-webkit-keyframes slidedown {
       from {
-        margin-top:-500px;
+        margin-top:-100%;
         width:300%
       }
 
       to {
-        margin-top:140px;
+        margin-top:0%;
         width:100%;
       }
     }
