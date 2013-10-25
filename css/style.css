@@ -4,6 +4,10 @@
   font-weight: 400;
   src: url(../webfonts/LeagueGothic-Regular.otf);
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 .clear {
     clear: both;
 }
@@ -23,12 +27,16 @@ body {
 }
 #banner {
     font-size: 18pt;
-    padding-left: 10px;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-name: slidein-left;
+    padding-left: 5px;
+    animation-duration: 1.2s;
+    animation-name: slidein-left;
 }
 #info {
     display: block;
     vertical-align: middle;
-    width: 96.5%;
+    width: 96.6%;
     height: 380px;
     padding: 10px;
     margin: 5px;
@@ -36,36 +44,26 @@ body {
     overflow: hidden;
 }
 #info .title1{
+    text-align:center;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-name: slidedown;
+    animation-duration: 1.2s;
+    animation-name: slidedown;
+}
+#info #gitcontainer {
     display: none;
     -webkit-animation-duration: 1.2s;
     -webkit-animation-name: slidein;
-}
-#info #github{
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidein;
-}
-.box {
-    font-size: 16pt;
-    text-align: center;
-    width: 215px;
-    height: 215px;
-    margin: 6px;
-    float: left;
-    background-color: #555;
-}
-.box:hover {
-    background-color: #0095BD;
-}
-#github {
+    animation-duration: 1.2s;
+    animation-name: slidein;
     position: relative;
     width: 99%;
-    display: block;
 }
 #gitimg {
-    width: 50%;
-    float: left;
+    position: relative;
+    float: left; 
 }
-#gitimg img {
+#gitimg img{
     height: 500px;
     width: 500px;
     position: absolute;
@@ -74,14 +72,15 @@ body {
 }
 #gittext {
     margin-top: 140px;
+    margin-left: 50%;
     width: 50%;
     font-size: 22pt;
     float: right;
 }
 #gittext .button {
-    color: #222;
+    color: #3BB4D5;
     background-color: #fff;
-    text-align: center; 
+    text-align: center;
     width: 125px;
     margin: auto;
     margin-top: 30px;
@@ -94,6 +93,30 @@ body {
 #gittext .button a {
     color: inherit;
     text-decoration: none;
+}
+#boxes {
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-name: slidein-right;
+    animation-duration: 1.2s;
+    animation-name: slidein-right;
+}
+.box {
+    font-size: 2.2em;
+    text-align: center;
+    width: 217px;
+    height: 217px;
+    margin: 5px;
+    float: left;
+    background-color: #555;
+}
+.box:hover {
+    background-color: #3BB4D5;
+}
+.box:target {
+    background-color: #3BB4D5;
+    margin-top: -5px;
+    padding-top: 9px;
+    height: 218px;
 }
 .centerit {
     /* Internet Explorer 10 */
