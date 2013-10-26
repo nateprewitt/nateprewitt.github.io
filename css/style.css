@@ -4,6 +4,12 @@
   font-weight: 400;
   src: url(../webfonts/LeagueGothic-Regular.otf);
 }
+body {
+    font-family: 'League Gothic', Impact, sans;
+    font-weight: normal;
+    background-color: #222222;
+    color: #ffffff;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -14,19 +20,14 @@ a {
 .active {
     display: block;
 }
-body {
-    font-family: 'League Gothic', Impact, sans;
-    font-weight: normal;
-    background-color: #222222;
-    color: #ffffff;
-}
 #container{
-    width: 918px;
+    max-width: 922px;
+    width: 100%;
     margin: auto;
     margin-top: 140px;
 }
 #content {
-    width: 99%;
+    width: 100%;
 }
 #banner {
     font-size: 18pt;
@@ -38,9 +39,7 @@ body {
 }
 #info {
     vertical-align: middle;
-    width: 96.6%;
     height: 380px;
-    padding: 10px;
     margin: 5px;
     background-color: #3BB4D5;
     overflow: hidden;
@@ -106,6 +105,7 @@ body {
     display: none;
 }
 #boxes {
+    width: 100%;
     -webkit-animation-duration: 1.2s;
     -webkit-animation-name: slidein-right;
     animation-duration: 1.2s;
@@ -114,8 +114,10 @@ body {
 .box {
     font-size: 2.2em;
     text-align: center;
-    width: 217px;
-    height: 217px;
+    max-width: 218px;
+    width: 25%;
+    height: 218px;
+    margin-top: 5px;
     margin: 5px;
     float: left;
     background-color: #555;
