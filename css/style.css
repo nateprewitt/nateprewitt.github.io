@@ -47,10 +47,10 @@ body {
 }
 #info .title1{
     text-align: center;
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidedown;
-    animation-duration: 1.2s;
-    animation-name: slidedown;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: slidein-right;
+    animation-duration: 1s;
+    animation-name: slidein-right;
 }
 #info #aboutcontainer {
     display: none;
@@ -61,7 +61,7 @@ body {
 #info #githubcontainer {
     display: none;
     -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidein;
+    -webkit-animation-name: slidein-right;
     animation-duration: 1.2s;
     animation-name: slidein;
     position: relative;
@@ -76,7 +76,7 @@ body {
     width: 500px;
     position: absolute;
     left: -80px;
-    top: 60px;
+    top: 10px;
 }
 #gittext {
     margin-top: 140px;
