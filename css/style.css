@@ -28,25 +28,25 @@ a {
 }
 #content {
     width: 100%;
-    padding: 5px;
 }
 #banner {
     font-size: 18pt;
-    padding: 5px;
+    margin-bottom: 5px;
     -webkit-animation-duration: 1.2s;
     -webkit-animation-name: slidein-left;
     animation-duration: 1.2s;
     animation-name: slidein-left;
 }
 #info {
-    vertical-align: middle;
+    text-align: center;
+    width: 100%;
     height: 380px;
     margin-bottom: 5px;
     background-color: #3BB4D5;
     overflow: hidden;
 }
 #info .title1{
-    text-align: center;
+    margin: auto;
     -webkit-animation-duration: 1s;
     -webkit-animation-name: slidein-right;
     animation-duration: 1s;
@@ -63,7 +63,7 @@ a {
     -webkit-animation-duration: 1.2s;
     -webkit-animation-name: slidein-right;
     animation-duration: 1.2s;
-    animation-name: slidein;
+    animation-name: slidein-right;
     position: relative;
     width: 99%;
 }
@@ -107,7 +107,7 @@ a {
 }
 #boxes {
     //width: 100%;
-    margin-right: -1px; /* fucking voodoo */
+    //margin-right: -1px; /* fucking voodoo */
     text-align: justify;
     text-justify: distribute-all-lines;
     -webkit-animation-duration: 1.2s;
@@ -128,6 +128,7 @@ a {
     width: 100%;
     height: 220px;
     margin-top: 5px;
+    text-align: center;
     //margin: 5px;
     float: left;
     background-color: #555;
@@ -145,6 +146,9 @@ a {
     background-color: #3BB4D5;
     margin-top: -5px;
     padding-top: 10px;
+}
+.box p {
+    margin-top: 85px;
 }
 .centerit {
     /* Internet Explorer 10 */
