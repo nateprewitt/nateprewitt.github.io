@@ -10,6 +10,7 @@ body {
     background-color: #222222;
     color: #ffffff;
     overflow: hidden;
+    font-size: 18px;
 }
 a {
     color: inherit;
@@ -20,6 +21,9 @@ a {
 }
 .active {
     display: block;
+}
+#nsbanner {
+    display: none;
 }
 #container{
     max-width: 960px;
@@ -67,7 +71,7 @@ a {
     animation-duration: 1.2s;
     animation-name: slidein-right;
     position: relative;
-    width: 99%;
+    //width: 99%;
 }
 #gitimg {
     position: relative;
@@ -82,7 +86,7 @@ a {
 }
 #gittext {
     margin-top: 140px;
-    margin-left: 50%;
+    //margin-left: 50%;
     width: 50%;
     font-size: 22pt;
     float: right;
@@ -125,7 +129,7 @@ a {
     width: 24.21875%; //specificity to fix browser pixel rounding errors
 }
 .box {
-    font-size: 2.2em;
+    font-size: 1.9em;
     width: 100%;
     height: 230px;
     margin-top: 5px;
@@ -148,7 +152,7 @@ a {
     padding-top: 10px;
 }
 .box p {
-    margin-top: 85px;
+    margin-top: 90px;
 }
 .title1 {
     font-size: 68pt;

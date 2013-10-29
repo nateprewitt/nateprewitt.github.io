@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    (function checkjs(){
+         $('.nojs').removeClass('nojs');
+     })();
     (function setswitcher(){
         var anchor = window.location.hash;
         contentswitch(anchor);
