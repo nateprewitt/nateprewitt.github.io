@@ -53,9 +53,9 @@ a {
 #info .title1{
     margin: auto;
     margin-top: 130px;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 1.2s;
     -webkit-animation-name: slidein-right;
-    animation-duration: 1s;
+    animation-duration: 1.2s;
     animation-name: slidein-right;
 }
 #info #aboutcontainer {
@@ -66,16 +66,16 @@ a {
 }
 #info #githubcontainer {
     display: none;
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidein-right;
-    animation-duration: 1.2s;
-    animation-name: slidein-right;
     position: relative;
     //width: 99%;
 }
 #gitimg {
     position: relative;
-    float: left; 
+    float: left;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-name: slidedown;
+    animation-duration: 1.2s;
+    animation-name: slidedown; 
 }
 #gitimg img{
     height: 500px;
@@ -85,11 +85,15 @@ a {
     top: -10px;
 }
 #gittext {
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-name: slidein50-right;
+    animation-duration: 1.2s;
+    animation-name: slidein50-right;
     margin-top: 140px;
-    //margin-left: 50%;
+    margin-left: 50%;
     width: 50%;
     font-size: 22pt;
-    float: right;
+    float: left;
 }
 #gittext .button {
     color: #3BB4D5;

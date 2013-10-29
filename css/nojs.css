@@ -1,3 +1,12 @@
+.nojs #container {
+    margin-top: 100px;
+}
+.nojs #info {
+    height: 500px;
+}
+.nojs #info .title1 {
+    margin-top: 180px;
+}
 .nojs #nsbanner {
     display: block;
     margin: -8px;
