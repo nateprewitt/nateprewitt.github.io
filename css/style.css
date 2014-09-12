@@ -64,6 +64,14 @@ a {
 #info #resumecontainer {
     display: none;
 }
+#resleft {
+    float: left;
+    width: 45%;
+}
+#resright {
+    float: right;
+    width: 45%;
+}
 #info #githubcontainer {
     display: none;
     position: relative;
@@ -130,7 +138,7 @@ a {
     display: inline-block;
     *display: inline;
     zoom: 1;
-    width: 24.21875%; //specificity to fix browser pixel rounding errors
+    width: 24.23%; //specificity to fix browser pixel rounding errors
 }
 .box {
     font-size: 1.9em;
