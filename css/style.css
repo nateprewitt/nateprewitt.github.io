@@ -1,13 +1,8 @@
-@font-face {
-  font-family: 'League Gothic';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../webfonts/LeagueGothic-Regular.otf);
-}
 body {
-    font-family: 'League Gothic', Impact, sans;
+    font-family: 'Lato', sans-serif;
     font-weight: normal;
-    background-color: #222222;
+    background-color: #1b222d;
+    background-size: cover;
     color: #ffffff;
     overflow: hidden;
     font-size: 18px;
@@ -19,12 +14,6 @@ a {
 .clear {
     clear: both;
 }
-.active {
-    display: block;
-}
-#nsbanner {
-    display: none;
-}
 #container{
     max-width: 960px;
     width: 100%;
@@ -33,146 +22,31 @@ a {
 }
 #content {
     width: 100%;
-}
-#banner {
-    font-size: 18pt;
-    margin-bottom: 5px;
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidein-left;
-    animation-duration: 1.2s;
-    animation-name: slidein-left;
-}
-#info {
-    text-align: center;
-    width: 100%;
-    height: 380px;
-    margin-bottom: 5px;
-    background-color: #3BB4D5;
-    overflow: hidden;
-}
-#info .title1{
-    margin: auto;
-    margin-top: 130px;
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidein-right;
-    animation-duration: 1.2s;
-    animation-name: slidein-right;
-}
-#info #aboutcontainer {
-    display: none;
-}
-#info #resumecontainer {
-    display: none;
-}
-#resleft {
-    float: left;
-    width: 45%;
-}
-#resright {
-    float: right;
-    width: 45%;
-}
-#info #githubcontainer {
-    display: none;
-    position: relative;
-    //width: 99%;
-}
-#gitimg {
-    position: relative;
-    float: left;
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidedown;
-    animation-duration: 1.2s;
-    animation-name: slidedown; 
-}
-#gitimg img{
-    height: 500px;
-    width: 500px;
     position: absolute;
-    left: -80px;
-    top: -10px;
+    top: 40%;
 }
-#gittext {
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidein50-right;
-    animation-duration: 1.2s;
-    animation-name: slidein50-right;
-    margin-top: 140px;
-    margin-left: 50%;
-    width: 50%;
-    font-size: 22pt;
+.name_container {
     float: left;
+    margin: 0 75px 0 50px;
 }
-#gittext .button {
-    color: #3BB4D5;
-    background-color: #fff;
-    text-align: center;
-    width: 125px;
-    margin: auto;
-    margin-top: 30px;
-    padding: 5px;
+.nate {
+    font-weight: bold;
+    font-size: 52pt;
 }
-#gittext .button:hover {
-    background-color: #0095BD;
-    color: #fff;
+.prewitt {
+    font-size: 42pt;
+    margin-top: -20px;
 }
-#gittext .button a {
-    color: inherit;
-    text-decoration: none;
-}
-#info #contactcontainer {
-    display: none;
-}
-#boxes {
-    //width: 100%;
-    //margin-right: -1px; /* fucking voodoo */
-    text-align: justify;
-    text-justify: distribute-all-lines;
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-name: slidein-right;
-    animation-duration: 1.2s;
-    animation-name: slidein-right;
-}
-#boxes a {
-    vertical-align: top;
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    width: 24.23%; //specificity to fix browser pixel rounding errors
-}
-.box {
-    font-size: 1.9em;
-    width: 100%;
-    height: 230px;
-    margin-top: 5px;
-    text-align: center;
+.icon {
+    height: 100px;
+    width: 100px;
     float: left;
-    background-color: #555;
+    padding-top: 20px;
+    margin: 0px 30px 0px 30px
 }
-.stretch {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0;
+svg path {
+    fill: #fff;
 }
-.box:hover {
-    background-color: #3BB4D5;
-}
-.box:target {
-    background-color: #3BB4D5;
-    margin-top: -5px;
-    padding-top: 10px;
-}
-.box p {
-    margin-top: 90px;
-}
-.title1 {
-    font-size: 68pt;
-}
-.title2 {
-    font-size: 35pt;
-}
-.subtitle {
-    font-size: 28pt;
-    color: #3BB4D5;
+svg:hover path {
+    fill: #4b91ff;
 }
