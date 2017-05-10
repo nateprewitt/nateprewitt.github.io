@@ -32,10 +32,12 @@ a {
 }
 .nate {
     font-weight: bold;
-    font-size: 52pt;
+    //font-size: 52pt;
+    font-size: 4em;
 }
 .prewitt {
-    font-size: 42pt;
+    //font-size: 42pt;
+    font-size: 3.2em;
     margin-top: -20px;
 }
 .icon {
