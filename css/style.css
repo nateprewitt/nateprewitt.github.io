@@ -80,6 +80,9 @@ svg:hover path {
         margin: 0 auto;
         min-width: 350px;
     }
+    .logo_row {
+        display: flex;
+    }
     .icon {
         height: 15vw;
         width: 15vw;
